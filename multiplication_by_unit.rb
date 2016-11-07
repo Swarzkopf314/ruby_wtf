@@ -54,6 +54,9 @@ ep "f.to_d == 1.to_d * f.to_d", true
 ep "f.to_d == 1.to_d * f", false, "<- WTF??"
 ep "f == f.to_d", false, "<- WTF??"
 
+# sanity check
+ep "f * 1.to_d == 1.to_d * f", true
+
 ep "f.to_d" # => #<BigDecimal:7f8202038280,'0.644E2',18(36)>
 ep "1.to_d * f" # => #<BigDecimal:7f82019c1208,'0.6440000000 000001E2',27(45)>
 

@@ -25,7 +25,10 @@ end
 
 puts
 
-f = 64.4
+strange_values =  [64.4, 73.60, 77.90, 87.40, 95.40]
+
+f = strange_values.sample
+# f = strange_values.first
 
 # # assertions
 # aq f, 64.4

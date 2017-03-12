@@ -1,3 +1,5 @@
+# checked for ruby-version 2.4.0
+
 require 'bigdecimal'
 require 'bigdecimal/util' # add method to_d
 # require 'test/unit/assertions'
@@ -19,7 +21,7 @@ def ep(code, check = nil, comment = nil)
   end
 
   puts code 
-  puts "=> #{GLOBAL.eval(code)} #{comment}"
+  puts "=> #{evaled} #{comment}"
   puts
 end
 

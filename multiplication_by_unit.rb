@@ -2,13 +2,6 @@
 
 require 'bigdecimal'
 require 'bigdecimal/util' # add method to_d
-# require 'test/unit/assertions'
-
-# # extend main object
-# class << self
-#   include Test::Unit::Assertions 
-#   alias_method :aq, :assert_equal
-# end
 
 GLOBAL = binding
 
@@ -30,18 +23,6 @@ puts
 strange_values =  [64.4, 73.60, 77.90, 87.40, 95.40]
 
 f = strange_values.sample
-# f = strange_values.first
-
-# # assertions
-# aq f, 64.4
-# aq f.class, Float
-# aq (1.to_d * f).class, BigDecimal
-# aq f.to_d.class, (1.to_d * f).class
-
-# aq f, 1.to_d * f
-
-# assert_not_equal f.to_d, 1.to_d * f
-# assert_not_equal f, f.to_d
 
 # visualization
 

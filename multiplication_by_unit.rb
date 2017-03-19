@@ -3,7 +3,7 @@
 ####
 # This script shows that ruby conversion of Float into Decimal is somehow inconsistent;
 # One would reasonably expect the equality 1.to_d * f == f.t_d to hold for every Float value f,
-# i.e. multiplying by DigDecimal unit can be viewed as alternative way of casting Float into Decimal;
+# i.e. multiplying by DigDecimal's unit can be viewed as an alternative way of casting Float into Decimal;
 # or simply one could expect that BigDecimal#* should always invoke BigDecimal#to_d on it's argument.
 # Yet for some Floats (e.g. 64.4) the results differ, as showed in this script.
 # This can cause a bug in some application contexts.

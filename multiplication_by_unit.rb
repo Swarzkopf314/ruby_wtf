@@ -6,7 +6,7 @@
 # i.e. multiplying by DigDecimal unit can be viewed as alternative way of casting Float into Decimal.
 # Yet for some Floats (e.g. 64.4) the results differ, as showed in this script.
 
-# My original question on stackoverflow:
+# My original question on Stackoverflow:
 # http://stackoverflow.com/questions/40472933/inconsistent-conversion-of-float-into-decimal-in-ruby/40473007
 
 # As Stefan points out in his exhaustive answer, it is due to different precisions being used:
@@ -58,7 +58,6 @@ ep "f.to_d" # => #<BigDecimal:7f8202038280,'0.644E2',18(36)>
 ep "1.to_d * f" # => #<BigDecimal:7f82019c1208,'0.6440000000 000001E2',27(45)>
 
 # precision check:
-# http://stackoverflow.com/questions/40472933/inconsistent-conversion-of-float-into-decimal-in-ruby/40473007
 ep "f.to_d(16) == 1.to_d * f", true
 ep "f.to_d == 1.to_d.mult(f, 15)", true
 
